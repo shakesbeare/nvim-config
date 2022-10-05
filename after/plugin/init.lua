@@ -2,7 +2,6 @@
 -- or general setup which should take place
 -- after plugins are loaded
 require('nvim-autopairs').setup {}
-require('bufferline').setup {}
 
 vim.g.vimwiki_list = {{ 
     path = '~/Dropbox/Documents/0-obsidian-notes/', 
@@ -19,3 +18,4 @@ vim.cmd([[
 vim.cmd([[
     autocmd BufEnter * :Rooter
 ]])
+

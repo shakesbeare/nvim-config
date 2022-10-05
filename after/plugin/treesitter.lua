@@ -4,12 +4,12 @@ require('nvim-treesitter').setup {
     ignore_install = {"phpdoc"},
     highlight = {
         enable = true,
-        additional_vim_regex_highlighting = {"markdown"}
+        additional_vim_regex_highlighting = true
 
     },
     indent = {
         enable = true
-    }
+    },
 }
 require('nvim-treesitter.configs').setup {
     refactor = {
@@ -30,6 +30,9 @@ require('nvim-treesitter.configs').setup {
             }
         }
     },
+    playground = {
+        enable = true
+    }
 }
 
 require('treesitter-context').setup {
