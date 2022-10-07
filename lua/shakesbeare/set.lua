@@ -12,18 +12,11 @@ vim.opt.linebreak = true
 vim.opt.conceallevel = 2
 vim.opt.showmode = false
 vim.opt.termguicolors = true
+vim.opt.foldenable = false
 
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 
 vim.opt.wrap = false
 
-vim.g.vim_markdown_math = 1
-vim.g.vim_markdown_frontmatter = 1
-vim.g.vim_markdown_strikethrough = 1
-vim.g.vim_markdown_autowrite = 1
-
-vim.g.vimtex_view_method = 'skim'
-vim.g.vimtex__compiler_method = 'latexmk'
-vim.g.tex_flavor = 'latex'
 

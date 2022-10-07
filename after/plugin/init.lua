@@ -3,12 +3,9 @@
 -- after plugins are loaded
 require('nvim-autopairs').setup {}
 
-vim.g.vimwiki_list = {{ 
-    path = '~/Dropbox/Documents/0-obsidian-notes/', 
-    syntax = 'markdown',
-    ext = '.md'
-}}
-
+vim.g.vimtex_view_method = 'skim'
+vim.g.vimtex__compiler_method = 'latexmk'
+vim.g.tex_flavor = 'latex'
 vim.g.tex_conceal = "sabgm"
 
 vim.cmd([[

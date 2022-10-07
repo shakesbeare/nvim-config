@@ -40,8 +40,8 @@ Plug('ellisonleao/gruvbox.nvim')
 -- Parsers and stuff
 Plug('pest-parser/pest.vim')
 Plug('lervag/vimtex')
-Plug('vimwiki/vimwiki')
 Plug('gisraptor/vim-lilypond-integrator')
+Plug('epwalsh/obsidian.nvim')
 
 vim.call('plug#end')
 
