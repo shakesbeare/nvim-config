@@ -1,4 +1,4 @@
-require('nvim-treesitter').setup {
+require('nvim-treesitter.configs').setup {
     ensure_installed = 'all',
     auto_install = true,
     ignore_install = {"phpdoc"},
@@ -8,10 +8,8 @@ require('nvim-treesitter').setup {
 
     },
     indent = {
-        enable = true
+        enable = true,
     },
-}
-require('nvim-treesitter.configs').setup {
     refactor = {
         highlight_definitions = {
             enable = true,
@@ -32,6 +30,9 @@ require('nvim-treesitter.configs').setup {
     },
     playground = {
         enable = true
+    },
+    rainbow = {
+        enable = true,
     }
 }
 
@@ -93,4 +94,14 @@ require('treesitter-context').setup {
     zindex = 20,
     mode = 'cursor',
     separator = nil
+}
+
+local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
+parser_config.supercollider = {
+    install_info = {
+        url = "https://github.com/madskjeldegaard/tree-sitter-supercollider",
+        files = {"src/parser.c"},
+        maintainer = "@madskjeldegaard"
+    },
+    filetype = "supercollider",
 }

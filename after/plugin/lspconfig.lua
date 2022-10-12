@@ -10,9 +10,9 @@ capabilities = capabilities
 require('lspconfig')['luau_lsp'].setup {
 capabilities = capabilities
 }
-require('lspconfig')['marksman'].setup {
-capabilities = capabilities
-}
+--require('lspconfig')['marksman'].setup {
+--capabilities = capabilities
+--}
 require('lspconfig')['html'].setup {
     capabilities = capabilities
 }

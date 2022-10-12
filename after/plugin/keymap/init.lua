@@ -35,6 +35,9 @@ nmap('<leader>y', '"+y')
 nnoremap('<leader>d', '"_d')
 vnoremap('<leader>d', '"_d')
 
+-- Expand lsp message
+nnoremap('gi', '<cmd>lua vim.diagnostic.open_float()<CR>')
+
 -- Tab completion
 vim.cmd([[
 imap <expr> <Tab> vsnip#jumpable(1) ? '<Plug>(vsnip-jump-next)' : '<Tab>'

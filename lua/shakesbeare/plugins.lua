@@ -36,12 +36,16 @@ Plug('itchyny/lightline.vim')
 Plug('kyazdani42/nvim-web-devicons')
 Plug('lukas-reineke/indent-blankline.nvim')
 Plug('ellisonleao/gruvbox.nvim')
+Plug('RRethy/nvim-base16')
+Plug('xiyaowong/nvim-transparent')
+Plug('p00f/nvim-ts-rainbow')
 
 -- Parsers and stuff
 Plug('pest-parser/pest.vim')
 Plug('lervag/vimtex')
 Plug('gisraptor/vim-lilypond-integrator')
 Plug('epwalsh/obsidian.nvim')
+Plug('davidgranstrom/scnvim')
 
 vim.call('plug#end')
 

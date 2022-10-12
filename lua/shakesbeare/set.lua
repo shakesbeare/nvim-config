@@ -13,6 +13,7 @@ vim.opt.conceallevel = 2
 vim.opt.showmode = false
 vim.opt.termguicolors = true
 vim.opt.foldenable = false
+vim.opt.syntax = "on"
 
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
