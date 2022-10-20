@@ -1,6 +1,7 @@
 local Remap = require('shakesbeare.keymap')
 
 local nmap = Remap.nmap
+local exprnmap = Remap.exprnmap
 local nnoremap = Remap.nnoremap
 local vnoremap = Remap.vnoremap
 local xnoremap = Remap.xnoremap
@@ -38,6 +39,9 @@ vnoremap('<leader>d', '"_d')
 -- Expand lsp message
 nnoremap('gi', '<cmd>lua vim.diagnostic.open_float()<CR>')
 
+-- Format document
+nnoremap('<leader>gf', '<cmd>lua vim.lsp.buf.format()<CR>')
+
 -- Tab completion
 vim.cmd([[
 imap <expr> <Tab> vsnip#jumpable(1) ? '<Plug>(vsnip-jump-next)' : '<Tab>'
@@ -47,3 +51,15 @@ vim.cmd([[
 smap <expr> <Tab> vsnip#jumpable(1) ? '<Plug>(vsnip-jump-next)' : '<Tab>'
 ]])
 
+vim.keymap.set(
+    "n",
+    "gf",
+    function()
+        if require('obsidian').util.cursor_on_markdown_link() then
+            return "<cmd>ObsidianFollowLink<CR>"
+        else
+            return "gf"
+        end
+    end,
+    { noremap = false, expr = true}
+)

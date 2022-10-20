@@ -24,21 +24,18 @@ Plug('godlygeek/tabular')
 Plug('mbbill/undotree')
 
 -- Controls and Navigation
-Plug('akinsho/toggleterm.nvim')
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', {tag = '0.1.0'})
 Plug('ThePrimeagen/harpoon')
 Plug('liuchengxu/vim-which-key')
-Plug('airblade/vim-rooter')
 
 -- Visual
 Plug('itchyny/lightline.vim')
 Plug('kyazdani42/nvim-web-devicons')
 Plug('lukas-reineke/indent-blankline.nvim')
-Plug('ellisonleao/gruvbox.nvim')
-Plug('RRethy/nvim-base16')
 Plug('xiyaowong/nvim-transparent')
 Plug('p00f/nvim-ts-rainbow')
+Plug('folke/tokyonight.nvim')
 
 -- Parsers and stuff
 Plug('pest-parser/pest.vim')
@@ -46,6 +43,7 @@ Plug('lervag/vimtex')
 Plug('gisraptor/vim-lilypond-integrator')
 Plug('epwalsh/obsidian.nvim')
 Plug('davidgranstrom/scnvim')
+
 
 vim.call('plug#end')
 

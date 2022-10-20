@@ -2,7 +2,7 @@ local nnoremap = require('shakesbeare.keymap').nnoremap
 
 local silent = { silent = true }
 
-nnoremap("<leader>a", function() require("harpoon.mark").add_file() end, silent)
+nnoremap("<leader>m", function() require("harpoon.mark").add_file() end, silent)
 nnoremap("<C-e>", function() require("harpoon.ui").toggle_quick_menu() end, silent)
 
 nnoremap("<C-h>", function() require("harpoon.ui").nav_file(1) end, silent)

@@ -12,7 +12,3 @@ vim.cmd([[
     autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
 ]])
 
-vim.cmd([[
-    autocmd BufEnter * :Rooter
-]])
-

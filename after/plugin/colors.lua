@@ -1,5 +1,9 @@
 vim.cmd(
-
-"colorscheme base16-shakesbeare"
-
+    'colorscheme tokyonight-night'
 )
+
+vim.cmd(
+    "let g:lightline = {'colorscheme': 'tokyonight-night'}"
+)
+
+

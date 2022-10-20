@@ -19,3 +19,14 @@ require('lspconfig')['html'].setup {
 require('lspconfig')['tsserver'].setup {
     capabilities = capabilities
 }
+
+require('lspconfig')['omnisharp'].setup {
+    cmd = {"dotnet", "~/.omnisharp/Omnisharp.dll"},
+    enable_editorconfig_support = true,
+    enable_ms_build_load_projects_on_demand = true,
+    enable_roslyn_analyzers = false,
+    organize_imports_on_format = false,
+    enable_import_completion = false,
+    sdk_include_prereleases = true,
+    analyze_open_documents_only = false,
+}
