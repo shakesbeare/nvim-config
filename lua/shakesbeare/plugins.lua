@@ -43,6 +43,7 @@ Plug('lervag/vimtex')
 Plug('gisraptor/vim-lilypond-integrator')
 Plug('epwalsh/obsidian.nvim')
 Plug('davidgranstrom/scnvim')
+Plug('Hoffs/omnisharp-extended-lsp.nvim')
 
 
 vim.call('plug#end')

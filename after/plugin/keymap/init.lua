@@ -7,6 +7,7 @@ local vnoremap = Remap.vnoremap
 local xnoremap = Remap.xnoremap
 local inoremap = Remap.inoremap
 
+local silent = { silent = true }
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
@@ -51,9 +52,8 @@ vim.cmd([[
 smap <expr> <Tab> vsnip#jumpable(1) ? '<Plug>(vsnip-jump-next)' : '<Tab>'
 ]])
 
-vim.keymap.set(
-    "n",
-    "gf",
+exprnmap(
+    'gf', 
     function()
         if require('obsidian').util.cursor_on_markdown_link() then
             return "<cmd>ObsidianFollowLink<CR>"
@@ -61,5 +61,5 @@ vim.keymap.set(
             return "gf"
         end
     end,
-    { noremap = false, expr = true}
+    silent
 )
