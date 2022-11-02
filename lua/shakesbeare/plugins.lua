@@ -36,6 +36,7 @@ Plug('lukas-reineke/indent-blankline.nvim')
 Plug('xiyaowong/nvim-transparent')
 Plug('p00f/nvim-ts-rainbow')
 Plug('folke/tokyonight.nvim')
+Plug('gruvbox-community/gruvbox')
 
 -- Parsers and stuff
 Plug('pest-parser/pest.vim')

@@ -1,9 +1,5 @@
 vim.cmd(
-    'colorscheme tokyonight-night'
+    'colorscheme gruvbox'
 )
 
-vim.cmd(
-    "let g:lightline = {'colorscheme': 'tokyonight-night'}"
-)
-
-
+vim.g.gruvbox_contrast_dark = "hard"
